@@ -5,7 +5,7 @@ O objetivo é explorar uma arquitetura moderna, separando frontend e backend, ut
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 ### **Frontend**
 
