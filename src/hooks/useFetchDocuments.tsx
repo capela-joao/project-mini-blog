@@ -12,8 +12,8 @@ import type { DocumentData } from '../types/FetchTypes';
 
 export const useFetchDocuments = (
   docCollection: string,
-  search = null,
-  uid = null
+  search: string | null = null,
+  uid: string | null = null
 ) => {
   const [documents, setDocuments] = useState<
     DocumentData[] | null
@@ -40,7 +40,7 @@ export const useFetchDocuments = (
         if (search) {
           q = await query(
             collectionRef,
-            where('tags', 'array-contains', search),
+            where('tagsArray', 'array-contains', search),
             orderBy('createdAt', 'desc')
           );
         } else {
