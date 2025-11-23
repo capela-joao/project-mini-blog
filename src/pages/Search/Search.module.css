@@ -1,0 +1,14 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search h1 {
+  margin-bottom: 1em;
+}
+
+.search p {
+  margin-bottom: 30px;
+}
