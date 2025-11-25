@@ -8,4 +8,6 @@
 
 .form button {
   margin-top: 15px;
+  padding: 20px 25px;
+  width: 60%;
 }

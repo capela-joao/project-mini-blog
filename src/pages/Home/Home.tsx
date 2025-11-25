@@ -31,7 +31,7 @@ const Home = () => {
           placeholder="Ou busque por tags..."
           onChange={(e) => setQuery(e.target.value)}
         />
-        <button className="button">Pesquisar</button>
+        <button className="btn_outline">Pesquisar</button>
       </form>
       <div>
         {loading && <p>Carregando...</p>}
