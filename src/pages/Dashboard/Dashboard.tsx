@@ -28,8 +28,8 @@ const Dashboard = () => {
       {posts && posts.length === 0 ? (
         <div className={styles.noposts}>
           <p>Não foram encontrados posts.</p>
-          <Link to="/posts/create" className="button">
-            Criar primeiro posts
+          <Link to="/posts/create" className="btn_outline">
+            Criar primeiro post
           </Link>
         </div>
       ) : (
