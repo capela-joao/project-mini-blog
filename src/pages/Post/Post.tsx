@@ -17,7 +17,7 @@ const Post = () => {
     <div className={styles.post}>
       {loading && <p>Carregando post...</p>}
       {post && (
-        <>
+        <div className={styles.detail_post}>
           <h1>{post.title}</h1>
           <img src={post.image} alt={post.title} />
           <p>{post.body}</p>
@@ -30,7 +30,7 @@ const Post = () => {
               </p>
             ))}
           </div>
-        </>
+        </div>
       )}
     </div>
   );

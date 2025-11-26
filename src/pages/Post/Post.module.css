@@ -1,5 +1,14 @@
 .post {
   text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail_post {
+  max-width: 720px;
 }
 
 .post h3 {
@@ -7,7 +16,6 @@
 }
 
 .post img {
-  min-width: 300px;
   max-width: 600px;
   border-radius: 6px;
 }

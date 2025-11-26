@@ -10,7 +10,9 @@ const PostDetail = ({ post }: any) => {
         <h2>{post.title}</h2>
         <span>{timeAgo(post.createdAt)}</span>
       </div>
-      <img src={post.image} alt={post.title} />
+      <div className={styles.post_image}>
+        <img src={post.image} alt={post.title} />
+      </div>
       <p className={styles.createdBy}>{post.createdBy}</p>
       <div className={styles.tags}>
         {post.tagsArray.map((tag: any) => (
