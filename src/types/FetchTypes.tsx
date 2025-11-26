@@ -12,3 +12,11 @@ export interface PostData {
   createBy: string;
   tagsArray: [];
 }
+
+export interface UpdatePostData {
+  title: string;
+  image: string;
+  body: string;
+  tagsArray: string[];
+  [key: `${string}.${string}`]: any;
+}
