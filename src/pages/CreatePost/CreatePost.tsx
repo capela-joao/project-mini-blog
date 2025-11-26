@@ -73,7 +73,7 @@ const CreatePost = () => {
             type="text"
             name="image"
             required
-            placeholder="Pense em um bom título..."
+            placeholder="Envie a URL da imagem que deseja..."
             onChange={(e) => setImage(e.target.value)}
             value={image}
           />
@@ -83,7 +83,7 @@ const CreatePost = () => {
           <textarea
             name="body"
             required
-            placeholder="Pense em um bom título..."
+            placeholder="Escreve sobre tudo o que quiser..."
             onChange={(e) => setBody(e.target.value)}
             value={body}
           />
