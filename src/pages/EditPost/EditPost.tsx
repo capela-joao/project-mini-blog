@@ -17,7 +17,6 @@ const EditPost = () => {
 
   const { updateDocument, response } =
     useUpdateDocument('posts');
-  const { user } = useAuthContext();
 
   const Navigate = useNavigate();
 

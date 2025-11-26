@@ -4,17 +4,16 @@ import { Link } from 'react-router-dom';
 
 import { useAuthContext } from '../../context/AuthContext';
 import { useFetchDocuments } from '../../hooks/useFetchDocuments';
-import { useFetchDocument } from '../../hooks/useFetchDocument';
 import { useDeletedDocument } from '../../hooks/useDeleteDocument';
 
 const Dashboard = () => {
   const { user } = useAuthContext();
   const uid = user.uid;
-  const {
-    documents: posts,
-    loading,
-    error,
-  } = useFetchDocuments('posts', null, uid);
+  const { documents: posts, loading } = useFetchDocuments(
+    'posts',
+    null,
+    uid
+  );
   const { deleteDocument } = useDeletedDocument('posts');
 
   if (loading) {
