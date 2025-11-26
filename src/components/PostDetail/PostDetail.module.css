@@ -1,5 +1,5 @@
 .post {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .post img {
@@ -10,6 +10,18 @@
 
 .post h2 {
   margin-bottom: 0.4em;
+  margin: 0;
+}
+
+.post_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.post_title span {
+  font-size: 0.7em;
 }
 
 .post .tags {

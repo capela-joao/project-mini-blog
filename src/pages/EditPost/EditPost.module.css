@@ -1,0 +1,30 @@
+.editPost {
+  text-align: center;
+}
+
+.editPost h2 {
+  font-size: 2.2em;
+}
+
+.form label {
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.form button {
+  margin-top: 15px;
+}
+
+.preview {
+  margin-bottom: 1em;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+}
+
+.preview_image {
+  max-width: 400px;
+  max-height: 300px;
+  margin-bottom: 1em;
+  border-radius: 8px;
+}

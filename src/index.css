@@ -29,6 +29,10 @@ button:focus {
   outline: none;
 }
 
+h2 {
+  font-size: 2.2em;
+}
+
 a,
 nav button {
   text-decoration: none;
@@ -44,7 +48,7 @@ nav button:hover {
   color: #cecece;
 }
 form {
-  max-width: 40%;
+  max-width: 720px;
   margin: 0 auto;
 }
 

@@ -44,8 +44,11 @@ const Dashboard = () => {
                 key={post.id}
                 className={styles.post_row}
               >
-                <p>{post.title}</p>
-                <div>
+                <div className={styles.post_content}>
+                  <p>{post.title}</p>
+                  <img src={post.image} alt={post.title} />
+                </div>
+                <div className={styles.post_actions}>
                   <Link
                     to={`/posts/${post.id}`}
                     className="btn_outline"

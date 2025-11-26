@@ -12,12 +12,13 @@ import { useState, useEffect } from 'react';
 import {
   type LoginCredentials,
   type RegisterCredentials,
-} from '../types/AuthTypes/AuthTypes';
+} from '../types/AuthTypes';
 
 export const useAuthentication = () => {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
-  const [cancelled, setCancelled] = useState<boolean>(false);
+  const [cancelled, setCancelled] =
+    useState<boolean>(false);
 
   const checkIfIsCancelled = () => {
     if (cancelled) {
@@ -37,15 +38,19 @@ export const useAuthentication = () => {
         data.password
       );
 
-      await updateProfile(user, { displayName: data.username });
+      await updateProfile(user, {
+        displayName: data.username,
+      });
     } catch (error: any) {
       let systemErrorMessage;
       if (error.message.includes('Password')) {
-        systemErrorMessage = 'A senha deve ter pelo menos 6 caracteres.';
+        systemErrorMessage =
+          'A senha deve ter pelo menos 6 caracteres.';
       } else if (error.message.includes('email-already')) {
         systemErrorMessage = 'E-mail já cadastrado.';
       } else {
-        systemErrorMessage = 'Ocorreu um erro, por favor tente mais tarde.';
+        systemErrorMessage =
+          'Ocorreu um erro, por favor tente mais tarde.';
       }
 
       setError(systemErrorMessage);
@@ -65,7 +70,11 @@ export const useAuthentication = () => {
     setError(null);
 
     try {
-      await signInWithEmailAndPassword(auth, data.email, data.password);
+      await signInWithEmailAndPassword(
+        auth,
+        data.email,
+        data.password
+      );
       setLoading(false);
     } catch (error: any) {
       let systemErrorMessage;
@@ -74,7 +83,8 @@ export const useAuthentication = () => {
       } else if (error.message.includes('wrong-password')) {
         systemErrorMessage = 'Senha incorreta.';
       } else {
-        systemErrorMessage = 'Ocorreu um erro, por favor tente mais tarde.';
+        systemErrorMessage =
+          'Ocorreu um erro, por favor tente mais tarde.';
       }
       setError(systemErrorMessage);
       setLoading(false);
