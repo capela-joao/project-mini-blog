@@ -8,6 +8,7 @@ const Navbar = () => {
   const { user } = useAuthContext();
   const { logout } = useAuthentication();
   const [scrolled, setScrolled] = useState<Boolean>(false);
+  const [open, setOpen] = useState<Boolean>(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +25,15 @@ const Navbar = () => {
       <NavLink to="/" className={styles.brand}>
         Mini <span>Blog</span>
       </NavLink>
-      <ul className={styles.links}>
+      <button
+        className={styles.menuButton}
+        onClick={() => setOpen(!open)}
+      >
+        ☰
+      </button>
+      <ul
+        className={open ? styles.sidebarOpen : styles.links}
+      >
         <li>
           <NavLink
             to="/"

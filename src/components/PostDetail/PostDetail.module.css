@@ -54,3 +54,23 @@
   );
   margin-bottom: 1em;
 }
+
+@media (max-width: 480px) {
+  .post {
+    max-width: 400px;
+    width: 100%;
+  }
+  .post_image img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 420px) {
+  .post {
+    max-width: 380px;
+    width: 100%;
+  }
+  .post_image img {
+    max-width: 380px;
+  }
+}

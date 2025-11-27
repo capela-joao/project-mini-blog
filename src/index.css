@@ -194,3 +194,16 @@ button {
 footer {
   top: auto;
 }
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1,
+  h2 {
+    font-size: 1.5em;
+  }
+}

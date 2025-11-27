@@ -72,3 +72,65 @@
   background-color: rgba(255, 255, 255, 0.15);
   opacity: 100%;
 }
+
+.menuButton {
+  display: none;
+}
+
+.sidebarOpen {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    justify-content: space-between;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .sidebarOpen {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 64px;
+    right: 0;
+    width: 220px;
+    height: calc(100vh - 60px);
+    background: #1a1a1a;
+    padding: 20px;
+    gap: 1.4em;
+    animation: slideIn 0.3s ease;
+    list-style: none;
+  }
+
+  .sidebarOpen button {
+    padding: 5px;
+    margin: 0 10px;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .menuButton {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.6rem;
+    cursor: pointer;
+  }
+
+  @media (min-width: 769px) {
+    .menuButton {
+      display: none;
+    }
+  }
+}

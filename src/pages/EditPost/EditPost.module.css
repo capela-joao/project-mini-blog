@@ -28,3 +28,15 @@
   margin-bottom: 1em;
   border-radius: 8px;
 }
+
+@media (max-width: 480px) {
+  .editPost {
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+  }
+
+  .preview_image {
+    max-width: 300px;
+  }
+}

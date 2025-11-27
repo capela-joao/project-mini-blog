@@ -30,3 +30,59 @@
 .noposts a {
   padding: 0.4em 0.6em;
 }
+
+@media (max-width: 768px) {
+  .home {
+    max-width: 720px;
+  }
+
+  .searchForm {
+    width: 100%;
+    max-width: 720px;
+  }
+
+  .searchForm input {
+    width: 60%;
+  }
+  img {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    max-width: 460px;
+  }
+
+  .searchForm {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .searchForm input {
+    width: 80%;
+  }
+  img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 420px) {
+  .home {
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+  }
+
+  .searchForm {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .searchForm input {
+    width: 80%;
+  }
+  img {
+    max-width: 400px;
+  }
+}
