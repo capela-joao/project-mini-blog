@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 1000;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -117,6 +117,24 @@
     to {
       transform: translateX(0);
     }
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 30;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .overlayVisible {
+    opacity: 1;
+    pointer-events: auto; /* permite clicar para fechar */
   }
 
   .menuButton {
