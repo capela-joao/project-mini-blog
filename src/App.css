@@ -2,22 +2,30 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
   padding-top: 60px;
   padding-bottom: 60px;
   flex: 1;
 }
 
-@media (max-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .container {
-    max-width: 440px;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }

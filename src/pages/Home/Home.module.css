@@ -1,22 +1,40 @@
 .home {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.home h1 {
+  text-align: center;
+}
+
+.searchForm,
+.post {
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .searchForm {
   max-width: 100%;
-  width: 60%;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-bottom: 2em;
   gap: 1em;
 }
 
 .searchForm input {
-  width: 50%;
-  margin-right: 0.5em;
+  width: 100%;
+  margin: 0;
+}
+
+.searchForm button {
+  width: 100%;
 }
 
 .noposts {
@@ -31,58 +49,38 @@
   padding: 0.4em 0.6em;
 }
 
-@media (max-width: 768px) {
-  .home {
-    max-width: 720px;
-  }
-
+@media screen and (min-width: 768px) {
   .searchForm {
-    width: 100%;
-    max-width: 720px;
-  }
-
-  .searchForm input {
+    flex-direction: row;
     width: 60%;
-  }
-  img {
-    max-width: 720px;
-  }
-}
-
-@media (max-width: 480px) {
-  .home {
-    max-width: 460px;
-  }
-
-  .searchForm {
-    width: 100%;
-    max-width: 400px;
+    justify-content: center;
+    gap: 1em;
   }
 
   .searchForm input {
-    width: 80%;
+    width: 50%;
   }
-  img {
-    max-width: 400px;
+
+  .searchForm button {
+    width: auto;
   }
 }
 
-@media (max-width: 420px) {
+@media screen and (max-width: 480px) {
   .home {
     display: flex;
-    justify-content: center;
-    max-width: 400px;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding: 0 8px;
   }
 
   .searchForm {
     width: 100%;
-    max-width: 400px;
+    max-width: 100%;
   }
 
   .searchForm input {
-    width: 80%;
-  }
-  img {
-    max-width: 400px;
+    width: 100%;
   }
 }
