@@ -97,21 +97,6 @@ button {
   cursor: pointer;
 }
 
-.button {
-  cursor: pointer;
-  color: rgba(0, 0, 0, 0.87);
-  padding: 10px 15px;
-  outline: none;
-  border: none;
-  border-radius: 10px;
-  font-size: 1em;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.95);
-  font-weight: bold;
-  opacity: 90%;
-  transition: transform 0.2s ease;
-}
-
 .btn {
   display: inline-flex;
   align-items: center;
