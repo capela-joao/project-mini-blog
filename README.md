@@ -5,6 +5,12 @@ O objetivo é explorar uma arquitetura moderna, separando frontend e backend, ut
 
 ---
 
+## Acesse o projeto em:
+
+### https://project-mini-blog-blush.vercel.app/
+
+---
+
 ## Tecnologias Utilizadas
 
 ### **Frontend**
